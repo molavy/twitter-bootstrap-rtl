@@ -68,10 +68,16 @@
 }
 /*end btn group and btn-toolbar*/
 /*start dropdown*/
+.rtl-dropdown-toggle
+{
+	padding-left:18px;
+}
 .rtl-dropdown-toggle .caret, .rtl-btn .caret {
 	float: left;
-	margin-right: 2px;
-	margin-left: 0px;
+	margin-right:1px;
+	margin-left: -9px;
+	
+	
 }
 .rtl-dropdown-menu {
 	right: 0;
@@ -105,7 +111,7 @@
 	float: right;
 	direction: rtl;
 }
-.nav-collapse .nav > li {
+.rtl-navbar .nav-collapse .nav > li {
 	float: none;
 }
 
@@ -115,6 +121,16 @@
 }
 .rtl-breadcrumb > li {
 	float: right;
+}
+/* FIXME: input bootstrap default height and line-height is 20px */
+input
+{
+	line-height: 30px!important;
+	height:30px!important;
+}
+.btn.dropdown-toggle
+{
+		height:30px!important;
 }
 input.rtl {
 	direction: rtl;
@@ -152,4 +168,91 @@ input.rtl {
 .rtl-accordion {
 	direction: rtl;
 }
+/* end modal*/
+/*start forms*/
+.rtl-form-search *
+{
+	direction: rtl;
+}
+.rtl-form-inline *
+{
+	direction: rtl;
+	float:right;
+	margin-right:10px;
+}
+.rtl-input-prepend,.rtl-input-append
+{
+	overflow:hidden;
+}
+.rtl-input-prepend *
+{
+}
+
+.rtl-input-prepend .add-on:first-child, .rtl-input-prepend .btn:first-child {
+    border-radius: 0 4px 4px 0;
+    margin-right:0;
+    margin-left:-1px;
+    float:right;
+}
+.rtl-input-prepend input,.rtl-input-prepend .btn
+{
+	border-radius:  4px 0 0 4px;
+	float:right;
+}
+.rtl-input-append .btn,.rtl-input-append .add-on
+{
+	    float:right;
+	    margin-right:-1px;
+}
+.rtl-input-append .add-on:last-child, .rtl-input-append .btn:last-child {
+    border-radius:  4px 0 0 4px;
+    
+    margin-left:0;
+
+}
+
+.rtl-input-append input,.rtl-form-search .rtl-input-append input
+{
+	border-radius: 0 4px 4px 0;
+	float: right;
+	
+}
+.rtl-form-search .rtl-input-append .search-query
+{
+border-radius: 0 14px 14px 0;	
+ float: right;
+}
+.rtl-form-search .rtl-input-append .btn:last-child
+{
+border-radius: 14px 0 0 14px;	
+
+}
+.rtl-form-search .rtl-input-prepend .search-query
+{
+	border-radius: 14px 0 0 14px;
+	float:right;
+}
+.rtl-form-search .rtl-input-prepend .btn:first-child
+{
+border-radius: 0 14px 14px 0;		
+
+}
+/*.rtl-input-append input, .rtl-input-append .uneditable-input
+{
+	float:right;
+    border-radius:4px 0 0 4px;
+}
+.rtl-input-append .appendedInput
+{
+	 
+	 border-radius:4px 0 0 4px;
+}
+.rtl-input-append .add-on
+{
+	float:right;
+	border-radius: 0 4px 4px 0;
+	
+}
+*/
+/*end forms*/
 
