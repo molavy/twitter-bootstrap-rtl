@@ -1,3 +1,155 @@
-body {
-	
+/*
+ body {
+ direction:rtl;
+ }
+
+ ul, ol {
+ margin: 0 25px 10px 0;
+ padding: 0;
+ }
+ body >div
+ {
+ margin: 25px 0 0 0;
+ }
+ body >div >.row
+ {
+ margin: 25px 0 0 0;
+ }
+ .rtl-container [class*="span"]
+ {
+ float:right;
+ }
+ [class*="span"]
+ .row {
+ margin-right: -30px;
+ }
+
+ */
+.rtl-dropdown-menu {
+
+	right: 0;
+	direction: rtl;
 }
+/*start btn group and btn-toolbar*/
+.rtl-btn-group + .rtl-btn-group {
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+.rtl-btn-group .btn {
+	float: right;
+}
+.rtl-btn-group .btn:first-child {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	margin-left: 0;
+}
+.rtl-btn-group .btn:last-child {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	margin-left: 0;
+}
+.rtl-btn-group .btn:only-of-type {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.rtl-btn-group > .btn + .btn {
+	margin-left: 0px;
+	margin-right: -1px;
+}
+.rtl-btn-toolbar .rtl-btn-group {
+	float: right;
+}
+/*end btn group and btn-toolbar*/
+/*start dropdown*/
+.rtl-dropdown-toggle .caret, .rtl-btn .caret {
+	float: left;
+	margin-right: 2px;
+	margin-left: 0px;
+}
+.rtl-dropdown-menu {
+	right: 0;
+	left: inherit;
+}
+/*end drop down*/
+.rtl-nav-tabs li {
+	float: right;
+}
+.rtl-nav-pills li {
+	float: right;
+}
+
+.rtl-nav-list {
+	direction: rtl;
+}
+.rtl-tab-content .tab-pane {
+	direction: rtl;
+}
+/*start rtl-navbar*/
+.rtl-navbar > .navbar-inner > .nav {
+	direction: rtl;
+	float: right;
+	margin: 0 0px 0 10px;
+}
+.rtl-navbar > .navbar-inner > .brand {
+	float: right;
+	margin: 0 -5px 0 0px;
+}
+.rtl-navbar .nav > li {
+	float: right;
+	direction: rtl;
+}
+.nav-collapse .nav > li {
+	float: none;
+}
+
+/*end rtl-navbar*/
+.rtl-breadcrumb {
+	overflow: hidden;
+}
+.rtl-breadcrumb > li {
+	float: right;
+}
+input.rtl {
+	direction: rtl;
+}
+/*start alert*/
+.rtl-alert {
+	direction: rtl;
+	padding: 8px 14px 8px 35px;
+}
+.rtl-alert .close {
+	float: left;
+	right: 21px;
+}
+/*end alert*/
+/*start progress*/
+.rtl-progress .bar {
+	float: right;
+}
+/*end progress*/
+.rtl-modal {
+	overflow: hidden;
+}
+.rtl-modal .modal-header {
+	direction: rtl;
+}
+.rtl-modal .modal-header .close {
+	float: left;
+}
+.rtl-modal .modal-body {
+	direction: rtl;
+}
+.rtl-modal .modal-footer * {
+	float: left;
+}
+.rtl-accordion {
+	direction: rtl;
+}
+

@@ -1,10 +1,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title> LTR Bootstrap  advanced</title>
+		<title> RTL Bootstrap  advanced</title>
 		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" />
-		
+		<link type="text/css" rel="stylesheet" href="css/rtl-bootstrap.css" />
 		<script type="text/javascript" src="jquery/jquery-1.8.3.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 		
@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div style="background-color: #f5f5f5;" class="bs-docs-example">
-            <div style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;" class="modal">
+            <div style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;" class="modal rtl-modal">
               <div class="modal-header">
                 <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
                 <h3>Modal header</h3>
@@ -29,7 +29,7 @@
           <div style="padding-bottom: 24px;" class="bs-docs-example">
             <a id="myModalian" class="btn btn-primary btn-large" href="#myModal" data-toggle="modal">Launch demo modal</a>
           </div>
-          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade" id="myModal" style="display: none;">
+          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade rtl-modal" id="myModal" style="display: none;">
             <div class="modal-header">
               <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
               <h3 id="myModalLabel">Modal Heading</h3>
@@ -63,7 +63,7 @@
           <!-- end modal-->
           
           <div class="bs-docs-example">
-            <div class="navbar navbar-static" id="navbar-example">
+            <div class="navbar navbar-static rtl-navbar" id="navbar-example">
               <div class="navbar-inner">
                 <div style="width: auto;" class="container">
                   <a href="#" class="brand">Project Name</a>
@@ -260,7 +260,7 @@
         </div>
           <!-- end popover-->
           <div class="bs-docs-example">
-          <div class="alert alert-block alert-error fade in">
+          <div class="rtl-alert alert alert-block alert-error fade in">
             <button data-dismiss="alert" class="close" type="button">×</button>
             <h4 class="alert-heading">Oh snap! You got an error!</h4>
             <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -270,14 +270,14 @@
           </div>
         </div>
         <div class="bs-docs-example">
-          <div class="alert fade in">
+          <div class="rtl-alert alert fade in">
             <button data-dismiss="alert" class="close" type="button">×</button>
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
           </div>
         </div>
           <!-- end  alert-->
           <div style="padding-bottom: 24px;" class="bs-docs-example">
-              <div data-toggle="buttons-checkbox" class="btn-group">
+              <div data-toggle="buttons-checkbox" class="rtl-btn-group btn-group">
                 <button class="btn btn-primary" type="button">Left</button>
                 <button class="btn btn-primary" type="button">Middle</button>
                 <button class="btn btn-primary" type="button">Right</button>
@@ -285,7 +285,7 @@
             </div>
           <!-- end checkbox-->
           <div style="padding-bottom: 24px;" class="bs-docs-example">
-              <div data-toggle="buttons-radio" class="btn-group">
+              <div data-toggle="buttons-radio" class="rtl-btn-group btn-group">
                 <button class="btn btn-primary" type="button">Left</button>
                 <button class="btn btn-primary" type="button">Middle</button>
                 <button class="btn btn-primary" type="button">Right</button>
@@ -293,7 +293,7 @@
             </div>
           <!-- end radio-->
           <div class="bs-docs-example">
-              <div id="accordion2" class="accordion">
+              <div id="accordion2" class="accordion rtl-accordion">
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
