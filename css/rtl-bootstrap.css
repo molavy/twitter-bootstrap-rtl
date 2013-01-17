@@ -63,6 +63,14 @@
 	margin-left: 0px;
 	margin-right: -1px;
 }
+.rtl-btn-group > .btn:last-child, .rtl-btn-group > .dropdown-toggle
+{
+	    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+       border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+   
+}
 .rtl-btn-toolbar .rtl-btn-group {
 	float: right;
 }
@@ -80,7 +88,7 @@
 	
 }
 .rtl-dropdown-menu {
-	right: 0;
+	right: 5px;
 	left: inherit;
 }
 /*end drop down*/
@@ -122,15 +130,15 @@
 .rtl-breadcrumb > li {
 	float: right;
 }
-/* FIXME: input bootstrap default height and line-height is 20px */
+/* FIXME: input bootstrap default height and line-height is 20px but don't work on example */
 input
 {
-	line-height: 30px!important;
-	height:30px!important;
+	line-height: 20px!important;
+	height:20px!important;
 }
 .btn.dropdown-toggle
 {
-		height:30px!important;
+		height:20px!important;
 }
 input.rtl {
 	direction: rtl;
